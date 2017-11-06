@@ -2,8 +2,14 @@ body {
 	font-size: 18px;
 	background-color: #fefefe;
 	background-image: url(../img/mainbg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;	
+	background-size: auto 100%;
+}
+@media (min-width:1200px) {
+	body{
+		background-size: 100%;
+	}	
 }
 header .row {
 	padding-top: 15px;
@@ -57,6 +63,9 @@ header .row {
 	width: 60px;
 	height: 60px;
 	background: #e1e1e1;
+}
+.social__btn:hover {
+	background: red;
 }
 .social__btn-vk {
 	background-image: url(../img/vk1.png);
