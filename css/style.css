@@ -178,7 +178,7 @@ header .row {
 .footer {
 	padding: 40px;
 	padding-bottom: 150px;
-	
+	border-radius: 20px;
 }
 .social {
 	display: flex;
