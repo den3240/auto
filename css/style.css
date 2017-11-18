@@ -2,15 +2,56 @@ body {
 	font-size: 18px;
 	position: relative;
 	background-color: #fefefe;
-	background-image: url(../img/mainbg.jpg);
+	background-image: url(../img/mainbg1.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;	
 	background-size: auto 100%;
 }
+.skew {
+	-webkit-transform: -webkit-transform: skewX(-20deg);
+	-ms-transform: skewX(-20deg);
+	-o-transform: skewX(-20deg);
+	transform: skewX(-20deg);;
+	-moz-transform: -webkit-transform: skewX(-20deg);
+	-ms-transform: skewX(-20deg);
+	-o-transform: skewX(-20deg);
+	transform: skewX(-20deg);;
+	-ms-transform: -webkit-transform: skewX(-20deg);
+	-ms-transform: skewX(-20deg);
+	-o-transform: skewX(-20deg);
+	transform: skewX(-20deg);;
+	-o-transform: -webkit-transform: skewX(-20deg);
+	-ms-transform: skewX(-20deg);
+	-o-transform: skewX(-20deg);
+	transform: skewX(-20deg);;
+	transform: -webkit-transform: skewX(-20deg);
+	-ms-transform: skewX(-20deg);
+	-o-transform: skewX(-20deg);
+	transform: skewX(-20deg);;
+}
+.bg-primary {
+	background-color: #262671;
+}
+.bg-warning { 
+	background-color: #D72517;
+}
+.text-primary {
+	color: #262671;
+}
+header {
+	background-image: url(../img/header1.jpg);
+	-webkit-background-size: contain;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	-ms-background-position-y: 50px;
+	background-position-y: -500px;
+}
 @media (min-width:1200px) {
 	body{
 		background-size: 100%;
-	}	
+	}
+
 }
 header .row {
 	padding-top: 15px;
@@ -37,8 +78,43 @@ header .row {
 	z-index: 1000;
 }
 @media (min-width:768px) {
+	.carousel-caption {
+		padding-bottom: 180px;
+	}
+	.carousel-caption b {
+		-webkit-transform: skewX(20deg);
+		-ms-transform: skewX(20deg);
+		-o-transform: skewX(20deg);
+		transform: skewX(45deg);
+		background-color: rgba(38,38,113,1);
+		padding: 0 10px;
+	}	
+	.carousel-caption span {
+		background-color: rgba(215,27,23,1);
+		font-size: 36px;
+		margin-left: -8px;
+		padding: 0 10px;
+		-webkit-transform: skewX(20deg);
+		-ms-transform: skewX(20deg);
+		-o-transform: skewX(20deg);
+		transform: skewX(20deg); 
+	}
 	main {
 		padding-bottom: 200px;
+	}
+	.decor {
+		background-color: transparent;		
+		border: 500px solid transparent;
+		border-top: 30px solid #262671;		
+		margin-top: 40px;
+		margin-bottom: -500px;
+	}
+	figcaption {
+		padding-bottom: 20px ;
+	}
+	#about p {
+		padding: 20px;
+
 	}
 	#sss {
 		background-size: 100%;
@@ -49,6 +125,48 @@ header .row {
 
 }
 @media (min-width: 1200px) {
+	.carousel-caption {
+		padding-bottom: 380px;
+	}
+	figcaption {
+		text-shadow: 1px 1px 3px black;
+	}
+	div .title {
+		text-shadow: 5px 5px 20px #fefefe;
+		position: relative;
+		z-index: 2;
+		height: 300px;
+		padding: 20px 0;
+		background-image: url("../img/about1.png"),
+		url("../img/about2.png");
+		background-repeat: no-repeat;
+		-ms-background-position: 5%, 95%;
+		background-position: 5%, 95%;
+		-webkit-background-size: 230px;
+		background-size: 230px;
+	}
+	.about__title {
+		position: relative;
+		text-align: center;
+		bottom: -200px;	
+		z-index: 2;	
+		width: 30%;
+		margin: 0px auto;
+		background-color: #003362;
+	}
+
+	#about  .bg-primary {
+		background-color: #262671;
+		margin-top: -140px;
+		padding:40px 10px;
+		
+	}	
+	.map {
+		padding: 30px;
+		margin-top: -15px;
+	}
+
+
 	#sss {	
 		background-size: cover;
 		
@@ -56,9 +174,6 @@ header .row {
 		
 		top: 70%;	
 	}	
-	figcaption {
-		text-shadow: 1px 1px 3px black;
-	}
 }
 .footer {
 	padding: 40px;
